@@ -10,9 +10,6 @@
 		2763338B1A12D904001BC7C0 /* ViewControllerBackUp in Resources */ = {isa = PBXBuildFile; fileRef = 2763338A1A12D904001BC7C0 /* ViewControllerBackUp */; };
 		27B0F3A31A0F0CDB00481F95 /* mainLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3A21A0F0CDB00481F95 /* mainLayout.png */; };
 		27B0F3A51A0F0D5F00481F95 /* searchBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3A41A0F0D5F00481F95 /* searchBar@2x.png */; };
-		27B0F3A71A0F1CED00481F95 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3A61A0F1CED00481F95 /* background@2x.png */; };
-		27B0F3A91A0F1E9A00481F95 /* searchButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3A81A0F1E9A00481F95 /* searchButton@2x.png */; };
-		27B0F3AB1A0F1EA200481F95 /* clearButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3AA1A0F1EA200481F95 /* clearButton@2x.png */; };
 		27B0F3AD1A0F210800481F95 /* clearButtonBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3AC1A0F210800481F95 /* clearButtonBlack@2x.png */; };
 		27B0F3AF1A0F210F00481F95 /* searchButtonBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3AE1A0F210F00481F95 /* searchButtonBlack@2x.png */; };
 		27B0F3B11A0F22FA00481F95 /* searchButtonRound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F3B01A0F22FA00481F95 /* searchButtonRound@2x.png */; };
@@ -23,10 +20,6 @@
 		27FD16851A0C580E00689AB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16841A0C580E00689AB1 /* Images.xcassets */; };
 		27FD16881A0C580E00689AB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16861A0C580E00689AB1 /* LaunchScreen.xib */; };
 		27FD16941A0C580E00689AB1 /* codeLookUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FD16931A0C580E00689AB1 /* codeLookUpTests.swift */; };
-		27FD16CC1A0E5FAD00689AB1 /* Slice 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16CB1A0E5FAD00689AB1 /* Slice 1@2x.png */; };
-		27FD16CE1A0E641000689AB1 /* iphone6Radiant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16CD1A0E641000689AB1 /* iphone6Radiant@2x.png */; };
-		27FD16D01A0E898000689AB1 /* iphone6Radiant1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16CF1A0E898000689AB1 /* iphone6Radiant1@2x.png */; };
-		27FD16D21A0E8C0A00689AB1 /* iphone6Radiant2.png in Resources */ = {isa = PBXBuildFile; fileRef = 27FD16D11A0E8C0A00689AB1 /* iphone6Radiant2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +36,6 @@
 		2763338A1A12D904001BC7C0 /* ViewControllerBackUp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewControllerBackUp; sourceTree = SOURCE_ROOT; };
 		27B0F3A21A0F0CDB00481F95 /* mainLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainLayout.png; sourceTree = "<group>"; };
 		27B0F3A41A0F0D5F00481F95 /* searchBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchBar@2x.png"; sourceTree = "<group>"; };
-		27B0F3A61A0F1CED00481F95 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
-		27B0F3A81A0F1E9A00481F95 /* searchButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchButton@2x.png"; sourceTree = "<group>"; };
-		27B0F3AA1A0F1EA200481F95 /* clearButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButton@2x.png"; sourceTree = "<group>"; };
 		27B0F3AC1A0F210800481F95 /* clearButtonBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButtonBlack@2x.png"; sourceTree = "<group>"; };
 		27B0F3AE1A0F210F00481F95 /* searchButtonBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchButtonBlack@2x.png"; sourceTree = "<group>"; };
 		27B0F3B01A0F22FA00481F95 /* searchButtonRound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchButtonRound@2x.png"; sourceTree = "<group>"; };
@@ -60,10 +50,6 @@
 		27FD168D1A0C580E00689AB1 /* codeLookUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeLookUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FD16921A0C580E00689AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27FD16931A0C580E00689AB1 /* codeLookUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codeLookUpTests.swift; sourceTree = "<group>"; };
-		27FD16CB1A0E5FAD00689AB1 /* Slice 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Slice 1@2x.png"; sourceTree = "<group>"; };
-		27FD16CD1A0E641000689AB1 /* iphone6Radiant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone6Radiant@2x.png"; sourceTree = "<group>"; };
-		27FD16CF1A0E898000689AB1 /* iphone6Radiant1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone6Radiant1@2x.png"; sourceTree = "<group>"; };
-		27FD16D11A0E8C0A00689AB1 /* iphone6Radiant2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone6Radiant2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,15 +109,8 @@
 				27B0F3B01A0F22FA00481F95 /* searchButtonRound@2x.png */,
 				27B0F3AE1A0F210F00481F95 /* searchButtonBlack@2x.png */,
 				27B0F3AC1A0F210800481F95 /* clearButtonBlack@2x.png */,
-				27B0F3AA1A0F1EA200481F95 /* clearButton@2x.png */,
-				27B0F3A81A0F1E9A00481F95 /* searchButton@2x.png */,
-				27B0F3A61A0F1CED00481F95 /* background@2x.png */,
 				27B0F3A41A0F0D5F00481F95 /* searchBar@2x.png */,
 				27B0F3A21A0F0CDB00481F95 /* mainLayout.png */,
-				27FD16CB1A0E5FAD00689AB1 /* Slice 1@2x.png */,
-				27FD16D11A0E8C0A00689AB1 /* iphone6Radiant2.png */,
-				27FD16CF1A0E898000689AB1 /* iphone6Radiant1@2x.png */,
-				27FD16CD1A0E641000689AB1 /* iphone6Radiant@2x.png */,
 				27FD167C1A0C580E00689AB1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -234,21 +213,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27FD16D01A0E898000689AB1 /* iphone6Radiant1@2x.png in Resources */,
 				27B0F3AD1A0F210800481F95 /* clearButtonBlack@2x.png in Resources */,
-				27FD16CE1A0E641000689AB1 /* iphone6Radiant@2x.png in Resources */,
-				27FD16CC1A0E5FAD00689AB1 /* Slice 1@2x.png in Resources */,
 				27FD16831A0C580E00689AB1 /* Main.storyboard in Resources */,
 				27B0F3B11A0F22FA00481F95 /* searchButtonRound@2x.png in Resources */,
-				27B0F3A91A0F1E9A00481F95 /* searchButton@2x.png in Resources */,
 				27B0F3A31A0F0CDB00481F95 /* mainLayout.png in Resources */,
 				27B0F3A51A0F0D5F00481F95 /* searchBar@2x.png in Resources */,
 				2763338B1A12D904001BC7C0 /* ViewControllerBackUp in Resources */,
 				27B0F3AF1A0F210F00481F95 /* searchButtonBlack@2x.png in Resources */,
 				27FD16881A0C580E00689AB1 /* LaunchScreen.xib in Resources */,
-				27FD16D21A0E8C0A00689AB1 /* iphone6Radiant2.png in Resources */,
-				27B0F3A71A0F1CED00481F95 /* background@2x.png in Resources */,
-				27B0F3AB1A0F1EA200481F95 /* clearButton@2x.png in Resources */,
 				27FD16851A0C580E00689AB1 /* Images.xcassets in Resources */,
 				27B0F3B31A0F230000481F95 /* clearButtonRound@2x.png in Resources */,
 			);
