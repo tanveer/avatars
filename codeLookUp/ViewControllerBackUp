@@ -1,0 +1,99 @@
+//
+//  ViewController.swift
+//  codeLookUp
+//
+//  Created by Tanveer Bashir on 11/6/14.
+//  Copyright (c) 2014 Tanveer Bashir. All rights reserved.
+//
+
+// test case 
+// Make: konica minolta
+// Model: c220
+// Code: c3001
+// Should update the textView with value of "Tray 4 jammed"
+
+import UIKit
+
+class ViewController: UIViewController, UIPickerViewDelegate{
+    
+    @IBOutlet weak var makeInputField: UITextField!
+    @IBOutlet weak var modelInputField: UITextField!
+    @IBOutlet weak var codeInputField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var errorDescriptionTextView: UITextView!
+    
+    var errorMessage = "Enter a valid error code"
+    var konicaErrorCodes = ["C2001": "Tray 2 feeder up down abnormality limit sensor(PS22) Printer control board(PRCB)",
+        "C1001":"Tray 3 jamming",
+        "C3001": "Tray 4 jammed",
+        "E04-01": "Check fuser thermal fuse and thermister",
+        "C2000": "3rd tray lift motor failure"]
+    
+    //error codes
+    let codeArray = ["C2001","C1001","C3001","2000","E04-01"]
+    //Copiers brand
+    let makeArray = ["Konica Minolta","Kyocera","Canon","Sharp","Panasonic"]
+    //Copiers model
+    let modelArray = ["C220","C280","C360","C452","C552","C652","C224","C284","C364","DP3530","TA4500"]
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+     
+        errorDescriptionTextView.text = "Hello World!"
+        
+    }
+
+    @IBAction func searchButtonPressed(sender: UIButton) {
+        
+        let lowerCaseCodes = codeArray.map {$0.lowercaseString}
+        let lowerCaseMakes = makeArray.map {$0.lowercaseString}
+        let lowerCaseModels = modelArray.map {$0.lowercaseString}
+        
+        var make = makeInputField.text.lowercaseString
+        var model = modelInputField.text.lowercaseString
+        var code = codeInputField.text.lowercaseString
+    
+        errorLabel.hidden = false
+        var mk: String = ""
+        var md: String = ""
+        var cd: String = ""
+
+        let makeIndex = find(lowerCaseMakes, make)
+        let modelIndex = find(lowerCaseModels, model)
+        let codeIndex = find(lowerCaseCodes, code)
+        
+        
+        if(make == lowerCaseMakes[makeIndex!]){
+            mk = lowerCaseMakes[makeIndex!]
+            if(model == lowerCaseModels[modelIndex!]){
+                md = lowerCaseModels[modelIndex!]
+                if(code == lowerCaseCodes[codeIndex!]){
+                    cd = lowerCaseCodes[codeIndex!].capitalizedString
+                }
+            }
+        }
+        errorDescriptionTextView.text = "\(konicaErrorCodes[cd]!)"
+    }
+        
+        
+    @IBAction func clearButtonPressed(sender: UIButton) {
+        makeInputField.text = ""
+        modelInputField.text = ""
+        codeInputField.text = ""
+        errorLabel.text = ""
+        if(errorDescriptionTextView.text == "" || errorDescriptionTextView.text != ""){
+            errorDescriptionTextView.text = "Hello World!"
+        }
+    
+    }
+    
+}
+        
+
+
+
+

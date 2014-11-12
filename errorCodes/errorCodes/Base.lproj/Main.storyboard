@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="errorCodes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB9-M9-3za">
+                                <rect key="frame" x="19" y="200" width="283" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="eSh-gK-e5v"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uMw-Xs-e85">
+                                <rect key="frame" x="12" y="28" width="296" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kua-yT-Kj9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsG-fQ-BGf">
+                                <rect key="frame" x="12" y="105" width="296" height="44"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchErrorCodePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ibt-sa-kKD"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXn-5d-PoN">
+                                <rect key="frame" x="60" y="399" width="200" height="130"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ife-XI-lsZ"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WB9-M9-3za" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="3" id="6dP-h9-Xcg"/>
+                            <constraint firstItem="uMw-Xs-e85" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="6xZ-V5-7OF"/>
+                            <constraint firstItem="uMw-Xs-e85" firstAttribute="centerX" secondItem="WB9-M9-3za" secondAttribute="centerX" id="7hU-YK-HMm"/>
+                            <constraint firstItem="WB9-M9-3za" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="Nde-sp-CnL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXn-5d-PoN" secondAttribute="trailing" constant="44" id="Plf-bi-JCE"/>
+                            <constraint firstItem="bXn-5d-PoN" firstAttribute="top" secondItem="WB9-M9-3za" secondAttribute="bottom" constant="8" id="aIN-CH-LaY"/>
+                            <constraint firstItem="uMw-Xs-e85" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="q0k-1l-r9f"/>
+                            <constraint firstItem="WB9-M9-3za" firstAttribute="top" secondItem="uMw-Xs-e85" secondAttribute="bottom" constant="128" id="qW9-vo-26A"/>
+                            <constraint firstItem="bXn-5d-PoN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="sP5-V3-vo7"/>
+                            <constraint firstItem="uMw-Xs-e85" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="vTD-xf-VXs"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="errorDescriptionField" destination="WB9-M9-3za" id="vrp-i8-8Y5"/>
+                        <outlet property="searchBar" destination="uMw-Xs-e85" id="NPI-Ck-kVP"/>
+                        <outlet property="searchDisplayController" destination="JKv-E6-eyF" id="fFg-Xw-IVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="JKv-E6-eyF">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="xsY-Ht-UAs"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="Xc4-Ar-lpo"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="auX-zv-p4d"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="aOi-xa-hpJ"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="178" y="144"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
